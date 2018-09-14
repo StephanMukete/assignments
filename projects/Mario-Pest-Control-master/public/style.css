@@ -1,0 +1,447 @@
+@font-face {
+    font-family: 'Super Mario 256' ;
+    src: url('fonts/supermario.ttf');
+}
+
+@font-face {
+        font-family: 'Press Start Regular';
+    src: url('fonts/prstart.ttf');
+}
+
+
+/*
+================================
+================================
+==                            ==
+==      Font Styling          ==
+==                            ==
+================================
+================================
+*/
+
+#page-title {
+    font-family: 'Super Mario 256';
+    font-size: 4em;
+    margin-left: 50px;
+    color: #eb1f22;
+    text-shadow: 10px 10px 20px black;
+}
+
+#mario-letters {
+    position: relative;
+    margin-left: 20px;
+    font-size: 2em;
+    perspective: 800px;
+}
+
+#mario-letters>span {
+    margin: 0 -30px;
+    transform-origin: 50% 70%;
+}
+
+#M {
+    color: #eb1f22;
+}
+
+#A, #O {
+    color: #78ea2c;
+}
+
+#R {
+    color: #fecb51; 
+}
+
+#I {
+    color: #5c9dff;
+}
+
+h3 {
+    font-family: 'Super Mario 256';
+    font-size: 2.5em;
+    color: #fecb51;
+    text-align: center;
+    text-shadow: 3px 0 0 black, 3px 3px 0 black, 0 3px 0 black, -3px 3px 0 black, -3px 0px 0 black, -3px -3px 0 black, 0px -3px 0 black, 3px -3px 0 black, 3px 0 1px black, 3px 3px 1px black, 0 3px 1px black, -3px 3px 1px black, -3px 0px 1px black, -3px -3px 1px black, 0px -3px 1px black, 3px -3px 1px black;
+        
+        /*3px 2px 1px black, -2px -2px 2px black, 4px 3px 1px white, 4px 6px 4px black;*/
+}
+
+.list-group, .number-caught, #grand-total-label, #grand-total, .footer-name {
+    font-family: Bungee;
+}
+
+.list-group, .number-caught {
+    text-align: center;
+    text-shadow: 0px 0px 2px #aaa;
+}
+
+.baddie-value {
+    font-size: 2em;
+}
+
+.number-caught {
+    font-size: 2em;
+    color: #010101;
+     /* text-shadow: 1px 1px 0 black, 2px 2px 1px #565656; */ 
+}
+
+
+.baddie-total {
+    font-size: 4em;
+    color: #fecb51;
+    text-shadow: 3px 0 0 black, 3px 3px 0 black, 0 3px 0 black, -3px 3px 0 black, -3px 0px 0 black, -3px -3px 0 black, 0px -3px 0 black, 3px -3px 0 black;
+        
+        /*1px 1px 0 black, 2px 2px 1px white, 4px 4px 0px black, -1px -1px 1px black;*/
+    
+}
+
+#grand-total-label {
+    text-align: right;
+    color: #fecb51;
+}
+#grand-total {
+    font-size: 2.5em;
+}
+
+.footer a {
+    color: #eb1f22;
+    font-weight: 600;
+    text-shadow: 1px 1px 0 black;
+}
+
+.footer-name {
+    color: #eb1f22;
+    text-shadow: 2px 2px 2px black;
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+
+.light-dark-toggle {
+    font-size: .8em;
+    font-family: Candal;
+    font-weight: 100;
+    color:  rgba(0,0,0, 0.7);
+    z-index: 10;
+}
+
+
+
+
+/*
+================================
+================================
+==                            ==
+==    Heading Area and        ==
+==    fixed emelent Styles    ==
+==                            ==
+================================
+================================
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 420px;
+    background-color: #5c9dff;
+}
+
+.jumbotron {
+    margin: 0px;
+    background-color: #555 !important;
+    background: url("http://imgur.com/ak5WkII.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+#dropdownMenu1 {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+}
+
+#dropdownMenu1>button {   
+    background-color: rgba(0,0,0, 0.2);
+    color: white;
+    border-color: transparent;
+    font-weight: 300;
+}
+
+#dropdownMenu1>ul {
+    background-color: rgba(0,0,0, 0.5);
+}
+
+#dropdownMenu1 a {
+    color: white;
+}
+
+.light-dark-toggle {
+    position: fixed;
+    right: 0px;
+    background-color: rgba(0,0,0, 0.2);
+    bottom: 20px;
+    padding: 2px;
+    border: 2px solid rgba(0,0,0, 0.2);
+}
+
+/*
+================================
+================================
+==                            ==
+==      Panel Area Styles     ==
+==                            ==
+================================
+================================
+*/
+
+
+
+.main-content {
+    padding: 25px 2%;
+}
+
+.thumbnail{
+    background: #78ea2c;
+/*    background: linear-gradient(#eeff00, #f0b437); #fecb51);  #78ea2c);*/
+    box-shadow: 10px 10px 40px black;
+    border: none;
+    margin-bottom: 100px;
+   
+}
+
+.baddie-thumb {
+    max-height: 200px !important;
+}
+
+.list-group-item {
+    background: none;
+    border-color: transparent;
+    overflow: hidden;
+}
+
+
+.input-group {
+    width: 16em;
+    margin: 0 auto;
+    border:none;
+}
+
+.number-caught {
+    margin: 0 auto;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background: #efefef;
+    border: 4px solid #222;
+    box-shadow: 0 9px 0 0 #222;
+}
+
+.input-group-addon {
+    border: 2em;
+    box-shadow: -1px 8px 0 1px black;
+    border-radius: 1em;
+    background-color: #eb1f22;
+    color: white;
+    font-size: 3em;
+    text-shadow: 2px 2px 0 #555;
+}
+
+.multiplier {
+    margin-left: 20%;
+    right: 40%;
+    text-shadow: 1px 1px 0 white, 2px 2px 1px black;
+}
+
+.coin-img {
+    width: 40px;
+}
+
+#grand-total-section {
+    position: absolute;
+    float: right;
+    top: 80px;
+    right: 140px;
+
+}
+
+.affix {
+    position: fixed !important;
+    float: right; 
+    top: 24px !important;
+    right: 140px;
+
+}
+
+#grand-total-background {
+    position: absolute;
+    padding: 1.5em 1em;
+    border: 12px dashed #fecb51;
+    border-radius: 6em;
+    background: #eb1f22;
+    height: 9.1em;
+    width: 9.1em;
+    text-shadow: 3px 3px 1px black;
+    box-shadow: 5px 5px 90px #cdcdcd;
+}
+
+#grand-total-label {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    overflow: scroll;
+    text-align: left;
+}
+
+#grand-total {
+    display: inline;
+    float: left;
+}
+
+
+.footer {
+    padding: 10px !important;
+    background: #5c9dff;
+    font-size: 1.5em;
+    margin: 0 0;
+    bottom: 0;
+}
+
+
+address {
+    margin: 0 auto;    
+}
+
+/*
+================================
+================================
+==                            ==
+==      Dark Mode Styles      ==
+==                            ==
+================================
+================================
+*/
+
+
+@media (max-width: 685px) {
+    #grand-total-section {
+    position: absolute;
+    float: right;
+    top: 280px;
+    right: 130px;
+
+    .affix {
+    position: fixed !important;
+    float: right; 
+    top: 24px !important;
+    right: 130px;
+    }
+    }
+}
+
+
+/*
+================================
+================================
+==                            ==
+==      Animations            ==
+==                            ==
+================================
+================================
+
+***********
+    animation classes added/removed by JavaScript to create visual 
+    effects on various elements when the onscreen buttons are pressed.
+**********
+*/
+
+.spin-disk {
+    animation: spinDisk .8s linear;
+}
+
+.baddie-smash {
+    animation: baddieSmash ease .4s;
+    transform-origin: 50% 100%;
+}
+
+.press-button {
+    animation: pressButton .26s ease-out both;
+}
+
+.coinBounce {
+    animation: coinBounce 0.3s ease-in;
+    transform-origin: 55% 100%;
+}
+.baddie-gloat {
+    animation: baddieGloat ease-in-out .3s;
+    animation-iteration-count: 1;
+    transform-origin: 50% 70%;
+}
+
+@keyframes spinDisk {
+    0% {
+        transform: rotate(0turn);
+                /*transform: scale(1);*/
+    }
+    50% {
+        transform:  rotate(.5turn);
+        /*transform: scale(1.05);*/
+    }
+    100% {
+        transform: rotate(1turn);
+        /*transform: scale(1);*/
+    }
+}
+
+@keyframes baddieSmash {
+    0% {
+            transform: scaleX(1)
+            scaleY(1);
+    }
+    50% {
+            transform: scaleX(2)
+            scaleY(.02);
+    }
+    100% {
+            transform: scaleX(1)
+            scaleY(1);
+    }
+}
+
+@keyframes pressButton {
+    0% {
+        transform: translateY(0);
+          box-shadow: -1px 8px 0 1px black;
+    }
+
+    50% { transform: translateY(12px);
+          box-shadow: 0px 1px 0 0px black;
+    }
+    
+    100% { transform: translateY(0);
+           box-shadow: -1px 8px 0 1px black;
+    }
+}
+
+@keyframes coinBounce {
+    10% {
+            transform: scaleY(.4);
+    }
+    50% {
+            transform: translateY(-20px)
+            scaleX(.5);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+@keyframes baddieGloat {
+    
+    50% {
+        transform: scale(1.17);
+    }
+    
+    100% {
+        transform: scale(1);
+    }
+}

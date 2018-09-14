@@ -1,0 +1,23 @@
+{
+  "name": "mario-pest-control",
+  "version": "1.0.0",
+  "description": "Website with animations and sound to gamify tracking Mario's \"earnings\" from eliminating various pests.",
+  "main": "script.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EvanMorrison/Mario-Pest-Control.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EvanMorrison/Mario-Pest-Control/issues"
+  },
+  "homepage": "https://github.com/EvanMorrison/Mario-Pest-Control#readme",
+  "dependencies": {
+    "express": "^4.14.1"
+  }
+}
