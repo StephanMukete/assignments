@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "hello_world"
+		},
+		{
+			"path": "silly_cia"
+		},
+		{
+			"path": "hello_class"
+		},
+		{
+			"path": "grocery_store"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "silly_cia"
+	}
+}

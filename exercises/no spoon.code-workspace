@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "/Users/student/dev/assignments/projects/daily-planet-editor"
+		},
+		{
+			"path": "no_spoon"
+		},
+		{
+			"path": "if"
+		},
+		{
+			"path": "odd_even"
+		},
+		{
+			"path": "loops_array"
+		},
+		{
+			"path": "social"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "no_spoon"
+	}
+}
