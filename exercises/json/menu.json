@@ -1,0 +1,33 @@
+{
+    "appetizers":[
+        {
+            "name": "fried pickles",
+            "ingredients":[
+                "pickles",
+                "oil",
+                "seasoning"
+            ],
+            "description": "Pickles fried in oil and stuff"
+        },
+        {
+            "name": "Calamari",
+            "ingredients":[
+                "squid",
+                "oil",
+                "seasoning"
+            ],
+            "description": "squid fried in oil and stuff"
+        }
+    ],
+    "drinks":[
+        {
+            "name": "Whiskey Tonic",
+            "ingredients":[
+                "whiskey",
+                "tonic",
+                "ice"
+            ],
+            "description": "goes down smooth"
+        }
+    ]
+}
