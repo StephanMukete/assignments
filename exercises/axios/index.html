@@ -1,12 +1,39 @@
-!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>Todo App</title>
 </head>
+
 <body>
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-<script src="app.js"></script>
+    <header>
+        <h1>Todo App</h1>
+    </header>
+    <section>
+        <form id="add-form">
+            <div>
+                <label>Title:</label>
+                <input name="title" type="text" placeholder="Title">
+            </div>
+            <div>
+                <label>Description:</label>
+                <input name="description" type="text" placeholder="Description">
+            </div>
+            <div>
+                <label>Price:</label>
+                <input name="price" type="number" placeholder="Price">
+            </div>
+            <div>
+                <button>+ Create New Item</button>
+            </div>
+        </form>
+        <ul id="todo-list"></ul>
+    </section>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./app.js"></script>
 </body>
+
+</html>
