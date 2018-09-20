@@ -1,29 +1,23 @@
-function sum(x, y){
-    console.log(x);
-    return x + y;
-  
-}
-function isLssThanEqualTo(x,){
-    return x <= 0;
-  
+function getOlderthan18(people){
+    return people.filter(function(person){
+        return person.age >= 18;
+    })
 }
 
-function longestString(arr){
-    
-    var lgth = 0;
-    var longest;
-    var arr = [""];
-    for(var i=0; i < arr.length; i++){
-        if(arr[i].length > lgth){
-            var lgth = arr[i].length;
-            longest = arr[i];
-        }      
-    }
-    return longest;
-} 
+// function sortOldPeople(oldPeople){
+//     return oldPeople.slice().sort(function(a, b){
+//         return a.lastName.localeCompare(b.lastName);
+//     })
+// }
+
+// function listPeople(people){
+//     return people.map(function(person){
+//         return "<li>" + person.firstName + " " + person.lastName + " is " + person.age + "</li>";
+//     });
+// }
 
 module.exports = {
-    sum: sum,
-    isLssThanEqualTo: isLssThanEqualTo,
-    longestString: longestString
-};
+    getOlderthan18: getOlderthan18,
+    // sortOldPeople: sortOldPeople,
+    // listPeople: listPeople
+}
