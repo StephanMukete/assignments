@@ -1,7 +1,7 @@
 
-// numbers =[] ;
+const numbers =[] ;
 function missingNumber(arr){
-    for(i = Math.min.apply(null, arr); i <= arr.length; i++){
+    for(let i = Math.min.apply(null, arr); i <= arr.length; i++){
        if(arr.indexOf(i) < 0 ) {
          return i;
        }
