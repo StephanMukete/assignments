@@ -89,13 +89,17 @@ const peopleAndPets = [
 
 const getPetNames = people => {
     //reduce the people into their pet names
-    return peole.reduce((getPetNamesArr, people)=>{
+    return people.reduce((getPetNamesArr, people)=>{
         //loop through pets
-        const petNames = person.pets.map(pet =>{
+        const petNames = people.pets.map(pet =>{
             return pet.name;
         })
-        return [...petNamesArr, ...petNames];
+        return [...getPetNamesArr, ...petNames];
     }, [])
 }
 
 getPetNames(peopleAndPets);
+
+const getNicknamedPets = people => people.reduce((getNicknamedPets, person) => getNicknamedPets.concat( person.pets.filter(pet => pet.nickNames.length)), []);
+
+console.log(getNicknamedPets(peopleAndPets));
