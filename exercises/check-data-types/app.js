@@ -4,7 +4,7 @@
 // }
 
 function checkTypes(arr) {
-    var arrType = typeof arr[0][0]
+    var arrType = typeof(arr[0][0])
     for(var i = 1; i< arr.length; i++){
       for(var y = 0; y < arr[i].length; y++){
       if(typeof arr[i][y] !== arrType) return false
@@ -12,4 +12,5 @@ function checkTypes(arr) {
     }
     return true
   }
-console.log(checkTypes([1,2,3],["a","b","c", 1]));
+console.log(checkTypes([1,2,3]["a","b","c", 1]));
+// filter, some, map reduce, sort
