@@ -4,15 +4,15 @@ import Header from "./Header"
 import Section from "./Section"
 import Footer from "./Footer"
 
+import "./styles.css"
+
 function App(){
     return(
         //what to render
-        <div>
+         <div > 
             <Header />
             <Section />
             <Footer />
-
-    
          </div>
     
     )}
