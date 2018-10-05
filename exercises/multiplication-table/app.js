@@ -1,11 +1,11 @@
 let array = [];
 
   function multiplicationTable(numbers, indexes){
-  //---Loop for the groups
+  //Loop for the numbers
   for(let n = 0; n < numbers; n++){
-//---Create multidimensional array
+//Create multidimensional array
     array[n] = [];
-    //---Loop for the indexes of the each group
+    //Loop for the indexes of the each group
     for(let i = 0; i < indexes; i++){
       array[n][i] = (n + 1) * (i + 1);
     }
