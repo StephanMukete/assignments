@@ -3,11 +3,17 @@ this.state = {
     items:[]
 }
 this.addNumber = this.addNumber.bind(this);
-addNumber(num) {
+deleteNumber(num) {
     this.setState(prevState => ({
         items: [...prevState.items, num]
     }))
 }
+addNumber(num) {
+    this.setState(prevState => ({
+        items: [...prevState.items.filter((num, i) => index !== i), num]
+    }))
+}
+CanvasRenderingContext2D()
 const numberListItems = this.state.items.map((num, i) =>(
     <li key = {i}>{num}</li>
 ))
