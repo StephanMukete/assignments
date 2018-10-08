@@ -64,6 +64,9 @@ export default Form;
 //     }
 //     addName(name){
 //         //set state to contain the new name
+            // this.setState(prevState => ({
+            //     names: [name, ...prevState.names]
+            // }))
 //     }
 //     render(){
 //         return(
