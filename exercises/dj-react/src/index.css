@@ -1,5 +1,17 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+.box-container {
+  display:grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 3px 3px;
+
+  border: 1px solid #000000;
 }
+.box {
+
+  height: 100px;
+  width: 100px;
+  border: 1px solid #000000;
+}
+
+
+
