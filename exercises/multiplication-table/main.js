@@ -1,9 +1,9 @@
 //in app.js
-const multTable = () => {
+const multTable = (x) => {
     const output = []
-    for(let i = 1; i <= 5; i++){
+    for(let i = 1; i <= x; i++){
         output.push([]);
-        for(let col = 1; col <=5; col++){
+        for(let col = 1; col <=x; col++){
             output[r-1].push(row * col)
         }
     }
@@ -26,6 +26,6 @@ const actual = [
 
 describe("Testing multiplication function", () => {
     it("should return a 5 X 5 mult table", () => {
-        assert.deepEqual(multTable(), expected);
+        assert.deepEqual(multTable(5), expected);
     })
 })
