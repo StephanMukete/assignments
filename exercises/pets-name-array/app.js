@@ -98,8 +98,8 @@ const getPetNames = people => {
     }, [])
 }
 
-getPetNames(peopleAndPets);
+console.log(getPetNames(peopleAndPets));
 
 const getNicknamedPets = people => people.reduce((getNicknamedPets, person) => getNicknamedPets.concat( person.pets.filter(pet => pet.nickNames.length)), []);
 
-console.log(getNicknamedPets(peopleAndPets));
+//console.log(getNicknamedPets(peopleAndPets));
