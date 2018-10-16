@@ -23,7 +23,7 @@ var mainOptions = ["walk", "check stats"];
 
 while(true){
     var choice = rs.keyInSelect(mainOptions, "\nYou may continue on your journey or view your player stats");
-    if(choice === 0){
+    if(choice === 1){
         var runsIntoEnemy = Math.random() < .333333;
         if(runsIntoEnemy){
             var Enemy = new Enemy();
@@ -32,7 +32,7 @@ while(true){
             var runs = rs.keyInYNStrict("\nDo you stand and fight?\n");
         }
         
-    } else if(choice === 1){
+    } else if(choice === 0){
         console.log(player);
         rs.question("\nPress any key to continue\n");
     }
