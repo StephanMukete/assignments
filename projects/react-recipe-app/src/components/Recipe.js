@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-
-
 import { Link, } from "react-router-dom";
- //import GifPlayer from 'react-gif-player@0.4.1/dist/gifplayer.js'
 
+// components
 import Header from './Header'
 import Footer from './Footer'
+
 var GifPlayer = require('react-gif-player');
 const API_KEY = "d6a0d06d5a83a3cd351ebea8bd50d3cb";
 
@@ -13,9 +12,9 @@ class Recipe extends React.Component {
   state = {
     activeRecipe: [],
     Loading : true,
-      err: null,
-      gif: '/img/2.gif',
-      still: '/img/2.jpg'
+    err: null,
+    gif: '/img/2.gif',
+    still: '/img/2.jpg'
   }
   componentDidMount = async () => {
     const title = this.props.location.state.recipe;
