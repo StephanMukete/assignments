@@ -27,8 +27,8 @@ const Recipes = props => (
                   state: { recipe: recipe.title }
                 }}>View Recipe</Link>
               </button>
-          </div>
-        </div>
+           </div>
+         </div>
       );
     })}
     </div>
