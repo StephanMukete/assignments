@@ -53,5 +53,5 @@ const boxesInfo = [{...
     }
 }]
   
-export default App;
+
     
