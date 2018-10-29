@@ -1,12 +1,14 @@
-import React, {Component} from 'react';
-
-import './index.css'
+import React, { Component } from 'react';
 
 //components
 import About from "./About";
 import Home from "./Home";
 import Services from "./Services";
+import MatchService from "./MatchService";
 import { Link, Switch, Route } from "react-router-dom";
+
+//services data
+import services from "./services.json";
 
 function App() {
     return (
@@ -22,9 +24,8 @@ function App() {
             <Switch>
                 <Route exact path="/" component={Home} />
                 <Route path="/about" component={About} />
-                <Route path="/services" component={Services} />
-                <Route path='path' component={component}/>
-                
+                <Route exact path="/services" component={Services} />
+                <Route path="/services/:serviceId" component={MatchService} />
             </Switch>
             <footer>
                 ©2018
@@ -34,3 +35,4 @@ function App() {
 }
 
 export default App;
+
